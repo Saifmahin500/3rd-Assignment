@@ -23,13 +23,13 @@
     <!-- this is header section -->
     <header class="container mx-auto">
         <!-- this is navber section -->
-        <div class="flex justify-start  items-center gap-10 bg-[#F85559] rounded-full mt-20 p-5">
+        <div class="flex flex-row-reverse lg:flex-row justify-between  items-center lg:gap-10 lg:bg-[#F85559] rounded-full lg:mt-20 mt-10 lg:p-5">
             <div class="flex justify-start ">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium  text-white">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] lg:p-2 shadow bg-base-100 rounded-box lg:w-52 font-medium  text-black lg:text-white ">
                   <li><a>HOME</a></li>
                   <li><a>ABOUT US</a></li>
                   <li><a>SHOP</a></li>
@@ -38,26 +38,26 @@
               </div>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 font-medium  text-white ">
+              <ul class="menu menu-horizontal px-1 font-medium text-black lg:text-white ">
                 <li><a>HOME</a></li>
                 <li><a>About us</a></li>
                 <li><a>SHOP</a></li>
                   <li><a>ALL FRUIT</a></li>
               </ul>
             </div>
-            <div class="flex md:justify-start justify-center items-center md:mx-12 md:mr-64">
+            <div class="flex md:justify-start justify-center items-center mx-6 md:mr-64">
                 <div>
-                    <img src="images/logo.png" alt="">
+                    <img src="images/logo.png" alt="" class="w-[30px] md:w-[40px]">
                 </div>
                 <div>
-                    <h3 class="text-3xl font-bold text-white">Fruit Burst</h3>
+                    <h3 class="text-2xl lg:text-3xl font-bold text-black lg:text-white ">Fruit Burst</h3>
                 </div>
             </div>
-              <div class="max-sm:w-24 max-sm:w-24">
+              <div class="hidden lg:block">
                 <button class="btn btn-wide lowercase rounded-full justify-between " >
                             
-                    <span class=" text-sm text-gray-500" >Search here</span> 
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <span class=" text-sm text-gray-500 text-center" >Search here</span> 
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
                          <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                        </svg>
                  </button>
@@ -70,16 +70,16 @@
              <div class="flex flex-col lg:flex-row justify-center">
                 <div class="absolute  ">
                     <div class="carousel-overlay bg-white "></div>
-            <div class="carousel-content  text-center text-white mt-20">
-              <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5">We supply highly quality organic products.</p>
-                <button class="btn btn-error rounded-lg">Shop now</button>
+            <div class="carousel-content  text-center text-white lg:mt-20">
+              <div class="mx-10">
+                <h1 class="lg:mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                <p class="lg:mb-5">We supply highly quality organic products.</p>
+                <button class="btn btn-error rounded-lg text-white font-semibold">Shop now</button>
               </div>
             </div>
                 </div>
                 <div >
-                    <img src="images/banner1.png" class="w-full " />
+                    <img src="images/banner1.png" class="w-full" />
                 </div>
              </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -154,7 +154,7 @@
        </section>
 
        <!-- this is banner bonus section -->
-       <div class="relative flex justify-around items-center bg-white p-5 w-9/12 m-auto -mt-32 ">
+       <div class="hidden lg:flex relative  justify-around items-center bg-white p-5 w-9/12 m-auto -mt-32 ">
         <div><img src="images/fruit1.png" alt=""></div>
         <div><img src="images/fruit2.png" alt=""></div>
         <div><img src="images/fruit3.png" alt=""></div>
@@ -173,6 +173,7 @@
                 </div>
                 <div>
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
+                      
                         <div class="flex flex-col">
                           <span class="countdown font-mono text-5xl font-extrabold">
                             <span style="--value:7;"></span>
@@ -181,18 +182,19 @@
                         </div> 
                         <div class="flex flex-col">
                           <span class="countdown font-mono text-5xl font-extrabold">
+                            <i class="fa-solid fa-ellipsis-vertical mr-5 mt-2 text-3xl" style="color: #111212;"></i>
                             <span style="--value:12;"></span>
                           </span>
                           hours
                         </div> 
                         <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl font-extrabold">
+                          <span class="countdown font-mono text-5xl font-extrabold"><i class="fa-solid fa-ellipsis-vertical mr-5 mt-2 text-3xl" style="color: #111212;"></i>
                             <span style="--value:15;"></span>
                           </span>
                           min
                         </div> 
                         <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl font-extrabold">
+                          <span class="countdown font-mono text-5xl font-extrabold"><i class="fa-solid fa-ellipsis-vertical mr-5 mt-2 text-3xl" style="color: #111212;"></i>
                             <span style="--value:20;"></span>
                           </span>
                           sec
@@ -256,7 +258,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
                               <div class="card-actions justify-center">
-                                <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
+                                <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
                                 <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
                                 <form method="dialog" class="modal-box">
                                     <div class="flex justify-center">
@@ -295,14 +297,14 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
                               <div class="card-actions justify-center">
-                                <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
-                               <dialog id="my_modal_6" class="modal">
+                                <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_10.showModal()">Details</button>
+                               <dialog id="my_modal_10" class="modal">
                                <form method="dialog" class="modal-box">
                                    <div class="flex justify-center">
                                        <img class="" src="images/fruit8.png" alt="">
                                    </div>
                                    <div class="card-body">
-                                       <p class="mb-5 text-3xl font-extrabold">Banana</p>
+                                       <p class="mb-5 text-3xl font-extrabold">Red Dragon</p>
                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nostrum.</p>
                                        <div class="rating justify-center mb-5 ">
                                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -501,7 +503,7 @@
                       </div>
                   </div>
                   <div>
-                      <img class="w-[465px]" src="images/whychoose1.png" alt="">
+                      <img class="w-80 lg:w-[765px]" src="images/whychoose1.png" alt="">
                   </div>
               </div>
 
@@ -549,16 +551,16 @@
 
     </main>
     <!-- this is footer section -->
-    <footer class="footer footer-center p-10 bg-black text-base-content rounded">
-      <div class="flex justify-center items-center m-auto">
+    <footer class="w-full footer footer-center lg:p-10 bg-black text-base-content rounded">
+      <div class="flex justify-center items-center m-auto mt-5">
         <div>
-            <img src="images/logo.png" alt="">
+            <img class="text-xl lg:text-3xl" src="images/logo.png" alt="">
         </div>
         <div>
-            <h3 class="text-3xl font-bold text-white">Fruit Burst</h3>
+            <h3 class="text-2xl lg:text-3xl font-bold text-white">Fruit Burst</h3>
         </div>
     </div>
-      <div class="grid grid-flow-col gap-16 text-white font-semibold">
+      <div class="grid grid-cols-3 lg:grid-cols-6 gap-6 text-white font-semibold">
         <a class="link link-hover">Home</a> 
         <a class="link link-hover">About us</a> 
         <a class="link link-hover">Shop</a> 
@@ -567,7 +569,7 @@
         <a class="link link-hover">My Account</a>
       </div> 
       <div>
-        <div class="grid grid-flow-col gap-4 text-white">
+        <div class="grid grid-cols-3 lg:grid-cols-6 gap-6 text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
             <g clip-path="url(#clip0_12_5266)">
               <path d="M40 7.5975C38.5125 8.25 36.9275 8.6825 35.275 8.8925C36.975 7.8775 38.2725 6.2825 38.8825 4.36C37.2975 5.305 35.5475 5.9725 33.6825 6.345C32.1775 4.7425 30.0325 3.75 27.6925 3.75C23.1525 3.75 19.4975 7.435 19.4975 11.9525C19.4975 12.6025 19.5525 13.2275 19.6875 13.8225C12.87 13.49 6.8375 10.2225 2.785 5.245C2.0775 6.4725 1.6625 7.8775 1.6625 9.39C1.6625 12.23 3.125 14.7475 5.305 16.205C3.9875 16.18 2.695 15.7975 1.6 15.195C1.6 15.22 1.6 15.2525 1.6 15.285C1.6 19.27 4.4425 22.58 8.17 23.3425C7.5025 23.525 6.775 23.6125 6.02 23.6125C5.495 23.6125 4.965 23.5825 4.4675 23.4725C5.53 26.72 8.545 29.1075 12.13 29.185C9.34 31.3675 5.7975 32.6825 1.9625 32.6825C1.29 32.6825 0.645 32.6525 0 32.57C3.6325 34.9125 7.9375 36.25 12.58 36.25C27.67 36.25 35.92 23.75 35.92 12.915C35.92 12.5525 35.9075 12.2025 35.89 11.855C37.5175 10.7 38.885 9.2575 40 7.5975Z" fill="white"/>
@@ -624,7 +626,7 @@
         </div>
       </div> 
       <div>
-        <p class="text-white">Copyright © 25-07-2023 - All right reserved by Saif Industries Ltd</p>
+        <p class="text-white hidden lg:block">Copyright © 25-07-2023 - All right reserved by Saif Industries Ltd</p>
       </div>
     </footer>
 </body>
